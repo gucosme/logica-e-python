@@ -1,7 +1,8 @@
 # APRENDENDO LÓGICA
 ## COM PYTHON
 
-#### Listas
+### Listas
+
 
 ```PYTHON
 # DECLARANDO UMA LISTA VAZIA
@@ -34,11 +35,15 @@ lista[0] = 'outro valor'
 print lista # ['outro valor', 'valor 2', 'valor 3', 'novo valor']
 
 # REMOVENDO ELEMENTOS DA LISTA
-lista.remove('novo valor') # novo valor
-print lista ['outro valor', 'valor 2', 'valor 3']
+lista.remove('valor 2') # novo valor
+print lista # ['outro valor', 'valor 3', 'novo valor']
+
+# REMOVENDO O ÚLTIMO VALOR EM UMA LISTA
+lista.pop() # 'novo valor'
+print lista # ['outro valor', 'valor 3']
 
 # RECUPERAR A POSIÇÃO PARA UM DETERMINADO VALOR NA LISTA
-lista.index('valor 2') # 1
+lista.index('valor 3') # 1
 lista.index('outro valor') # 0
 ```
 > Mais sobre listas [neste site](http://www.devfuria.com.br/python/listas/)
